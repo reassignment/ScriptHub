@@ -3,6 +3,7 @@ local lib = loadstring(game:HttpGet("https://raw.githubusercontent.com/insanedud
 lib:SetTitle("ScriptHub - Goal Simulator")
 
 local tab1 = lib:NewTab("Automatic", "Automate Stuff")
+local autoScoreSlider = nil
 
 
 tab1:NewToggle("Auto Score Perfect",false,function(value)
