@@ -13,6 +13,9 @@ elseif(game.PlaceId) == 8904430941 then
 elseif(game.PlaceId) == 8075693156 then
   loadstring(game:HttpGet("https://raw.githubusercontent.com/reassignment/ScriptHub/main/autoFarmCod.lua"))()
 
+elseif(game.PlaceId) == 11606818992 then
+  https://raw.githubusercontent.com/reassignment/ScriptHub/main/SteepSteps
+
 else
   loadstring(game:HttpGet("https://raw.githubusercontent.com/reassignment/ScriptHub/main/universal"))()
 end
