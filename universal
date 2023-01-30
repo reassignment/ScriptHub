@@ -23,7 +23,7 @@ end)
 
 local tab2 = lib:NewTab("Infinite Yield", "Admin Script")
 
-tab1:NewButton("Infinite Yield",function()
+tab2:NewButton("Infinite Yield",function()
    loadstring(game:HttpGet("https://raw.githubusercontent.com/EdgeIY/infiniteyield/master/source"))();
 end)
 
