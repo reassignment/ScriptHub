@@ -4,7 +4,7 @@ lib:SetTitle("ScriptHub - Call of Duty by FunChat")
 
 local tab1 = lib:NewTab("Automatic", "Automate Stuff")
 
-tab1:NewToggle("Auto Kill Enemies",false,function(value)
+tab1:NewToggle('Auto Kill Enemies',false,function(value)
    if value == true then
         getgenv().autoKill = true;
         while autoKill == true do
@@ -18,7 +18,7 @@ tab1:NewToggle("Auto Kill Enemies",false,function(value)
 	            hrp = plr.Character.HumanoidRootPart
 
             local args = {
-                [1] = game:GetService("Players").LocalPlayer.Character.M249,
+                [1] = game:GetService("Players").LocalPlayer.Character.AK47,
                 [2] = {
                    ["p"] = nil --[[Vector3]],
                    ["pid"] = 1,
