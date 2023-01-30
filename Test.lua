@@ -1,6 +1,6 @@
 local Library = loadstring(game:HttpGet('https://raw.githubusercontent.com/astraln/SentinelUILIB/main/UI.lua', true))()
 
-local window = Library:Window('Sentinel')
+local window = Library:Window('ScriptHub - Paintball Classic')
 
 local tab = window:Tab('Home')
 
