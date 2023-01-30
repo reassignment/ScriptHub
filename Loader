@@ -1,3 +1,7 @@
 if(game.PlaceId) == 2701865035 then
   loadstring(game:HttpGet("https://raw.githubusercontent.com/reassignment/ScriptHub/main/Test.lua"))()
 end
+
+if(game.PlaceId) == 8904430941 then
+  loadstring(game:HttpGet("https://raw.githubusercontent.com/reassignment/ScriptHub/main/GoalSim.lua"))()
+end
