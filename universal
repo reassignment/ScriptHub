@@ -2,6 +2,13 @@ local lib = loadstring(game:HttpGet("https://raw.githubusercontent.com/insanedud
 
 lib:SetTitle("ScriptHub - Universal")
 
+getgenv().cham = false
+getgenv().boxESP = false
+getgenv().Visibility = false
+
+loadstring(game:HttpGet("https://raw.githubusercontent.com/skatbr/Roblox-Releases/main/A_simple_esp.lua", true))()
+getgenv().esp_loaded = true
+
 local tab1 = lib:NewTab("Speed and Jump", "Walkspeed and Jumpspeed")
 
 tab1:NewSlider("WalkSpeed",16,500,16,function(value)
@@ -12,6 +19,19 @@ tab1:NewSlider("JumpPower",50,500,50,function(value)
    game.Players.LocalPlayer.Character.Humanoid.JumpPower = value
 end)
 
+
+
+local tab2 = lib:NewTab("Infinite Yield", "Admin Script")
+
 tab1:NewButton("Infinite Yield",function()
    loadstring(game:HttpGet("https://raw.githubusercontent.com/EdgeIY/infiniteyield/master/source"))();
+end)
+
+local tab3 = lib:NewTab("ESP", "ESP Obviously")
+
+tab3:NewToggle("ESP",false,function(value)
+   getgenv().boxESP = Value
+   getgenv().Visibility = Value
+   getgenv().cham = Value
+   getgenv().useTeamColor = Value
 end)
