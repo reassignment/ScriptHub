@@ -4,7 +4,7 @@ local window = Library:Window('ScriptHub - Goal Simulator')
 
 local tab = window:Tab('Automatic')
 
-tab:Toggle('Toggle',false, function(t)
+tab:Toggle('Auto Score Perfect',false, function(t)
     if t == true then
         getgenv().autoPerfect = true;
         while autoPerfect == true do
@@ -14,5 +14,17 @@ tab:Toggle('Toggle',false, function(t)
         end
     elseif t == false then
         getgenv().autoPerfect = false;
+    end
+end)
+
+tab:Toggle('Auto Contract',false, function(t)
+    if t == true then
+        getgenv().autoContract = true;
+        while autoContract == true do
+            game:GetService("ReplicatedStorage").Events.RemoteFunction:InvokeServer(table.unpack({    [1] = "Divisions",    [2] = "AcceptContract",}))
+            wait()
+        end
+    elseif t == false then
+        getgenv().autoContract = false;
     end
 end)
