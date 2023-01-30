@@ -18,7 +18,7 @@ tab1:NewToggle('Auto Kill Enemies',false,function(value)
 	            hrp = plr.Character.HumanoidRootPart
 
             local args = {
-                [1] = game:GetService("Players").LocalPlayer.Character.AK47,
+                [1] = game:GetService("Players").LocalPlayer.Character.RPG,
                 [2] = {
                    ["p"] = nil --[[Vector3]],
                    ["pid"] = 1,
