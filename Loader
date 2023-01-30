@@ -9,3 +9,7 @@ end
 if(game.PlaceId) == 8075693156 then
   loadstring(game:HttpGet("https://raw.githubusercontent.com/reassignment/ScriptHub/main/autoFarmCod.lua"))()
 end
+
+else
+  local player = game:GetService("Players").LocalPlayer
+  player:Kick("yeah...that was it.")
