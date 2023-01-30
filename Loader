@@ -1,15 +1,15 @@
 if(game.PlaceId) == 2701865035 then
   loadstring(game:HttpGet("https://raw.githubusercontent.com/reassignment/ScriptHub/main/Test.lua"))()
-end
 
-if(game.PlaceId) == 8904430941 then
+
+elseif(game.PlaceId) == 8904430941 then
   loadstring(game:HttpGet("https://raw.githubusercontent.com/reassignment/ScriptHub/main/GoalSim.lua"))()
-end
 
-if(game.PlaceId) == 8075693156 then
+
+elseif(game.PlaceId) == 8075693156 then
   loadstring(game:HttpGet("https://raw.githubusercontent.com/reassignment/ScriptHub/main/autoFarmCod.lua"))()
-end
 
 else
   local player = game:GetService("Players").LocalPlayer
-  player:Kick("yeah...that was it.")
+  player:Kick("Game Unsupported.")
+end
