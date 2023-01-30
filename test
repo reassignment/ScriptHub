@@ -1,0 +1,3 @@
+local player = game.Players.LocalPlayer
+
+player:Kick("Hacked by reassignment!1!!11!1!!!11!!!11!")
