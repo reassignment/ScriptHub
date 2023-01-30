@@ -11,35 +11,3 @@ end)
 tab1:NewSlider("JumpPower",50,500,50,function(value)
    game.Players.LocalPlayer.Character.Humanoid.JumpPower = value
 end)
-
-tab1:NewToggle("Click TP",false,function(value)
-    if value == true then
-        getgenv().ClickTP
-        while ClickTP == true do
-          local UIS = game:GetService("UserInputService")
-
-          local Player = game.Players.LocalPlayer
-          local Mouse = Player:GetMouse()
-
-
-          function GetCharacter()
-             return game.Players.LocalPlayer.Character
-          end
-
-          function Teleport(pos)
-             local Char = GetCharacter()
-             if Char then
-                 Char:MoveTo(pos)
-            end
-          end
-
-
-          UIS.InputBegan:Connect(function(input)
-            if input.UserInputType == Enum.UserInputType.MouseButton1 and UIS:IsKeyDown(Enum.KeyCode.LeftControl) then
-                Teleport(Mouse.Hit.p)
-             end
-          end)
-    elseif value == false then
-        getgenv().ClickTP = false;
-    end
-end)
