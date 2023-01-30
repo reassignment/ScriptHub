@@ -11,3 +11,7 @@ end)
 tab1:NewSlider("JumpPower",50,500,50,function(value)
    game.Players.LocalPlayer.Character.Humanoid.JumpPower = value
 end)
+
+tab1:NewButton("Infinite Yield",function()
+   https://raw.githubusercontent.com/EdgeIY/infiniteyield/master/source
+end)
