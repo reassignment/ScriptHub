@@ -14,4 +14,5 @@ tab:Toggle('Toggle',false, function(t)
         end
     elseif t == false then
         getgenv().autoPerfect = false;
+    end
 end)
