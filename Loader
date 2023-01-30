@@ -1,3 +1,7 @@
+while not game:IsLoaded() do
+    wait(0.1)
+end
+
 if(game.PlaceId) == 2701865035 then
   loadstring(game:HttpGet("https://raw.githubusercontent.com/reassignment/ScriptHub/main/Test.lua"))()
 
