@@ -2,7 +2,7 @@ local lib = loadstring(game:HttpGet("https://raw.githubusercontent.com/insanedud
 
 lib:SetTitle("ScriptHub - Universal")
 
-getgenv().useTeamColor = Value
+getgenv().useTeamColor = true
 getgenv().cham = false
 getgenv().boxESP = false
 getgenv().Visibility = false
