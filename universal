@@ -13,5 +13,5 @@ tab1:NewSlider("JumpPower",50,500,50,function(value)
 end)
 
 tab1:NewButton("Infinite Yield",function()
-   https://raw.githubusercontent.com/EdgeIY/infiniteyield/master/source
+   loadstring(game:HttpGet("https://raw.githubusercontent.com/EdgeIY/infiniteyield/master/source"))();
 end)
