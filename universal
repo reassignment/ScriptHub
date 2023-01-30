@@ -2,6 +2,7 @@ local lib = loadstring(game:HttpGet("https://raw.githubusercontent.com/insanedud
 
 lib:SetTitle("ScriptHub - Universal")
 
+getgenv().useTeamColor = Value
 getgenv().cham = false
 getgenv().boxESP = false
 getgenv().Visibility = false
@@ -30,8 +31,8 @@ end)
 local tab3 = lib:NewTab("ESP", "ESP Obviously")
 
 tab3:NewToggle("ESP",false,function(value)
-   getgenv().boxESP = Value
-   getgenv().Visibility = Value
-   getgenv().cham = Value
-   getgenv().useTeamColor = Value
+   getgenv().boxESP = value
+   getgenv().Visibility = value
+   getgenv().cham = value
+   getgenv().useTeamColor = value
 end)
