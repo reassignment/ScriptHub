@@ -331,7 +331,7 @@ coroutine.wrap(GRIR_fake_script)()
             Button.Name = "Button"
             Button.Text = title or 'Button'
             Button.Parent = Page
-            Button.BackgroundColor3 = Color3.fromRGB(134, 10, 49)
+            Button.BackgroundColor3 = Color3.fromRGB(0, 0, 139)
             Button.BorderSizePixel = 0
             Button.Size = UDim2.new(1, -6, 0, 34)
             Button.AutoButtonColor = false
@@ -343,11 +343,11 @@ coroutine.wrap(GRIR_fake_script)()
             UICorner.Parent = Button
 
             Button.MouseEnter:Connect(function()
-                TweenService:Create(Button, TweenInfo.new(0.2, Enum.EasingStyle.Quad, Enum.EasingDirection.Out), {BackgroundColor3 = Color3.fromRGB(134, 10, 49)}):Play()
+                TweenService:Create(Button, TweenInfo.new(0.2, Enum.EasingStyle.Quad, Enum.EasingDirection.Out), {BackgroundColor3 = Color3.fromRGB(0, 0, 139)}):Play()
             end)
 
             Button.MouseLeave:Connect(function()
-                TweenService:Create(Button, TweenInfo.new(0.2, Enum.EasingStyle.Quad, Enum.EasingDirection.Out), {BackgroundColor3 = Color3.fromRGB(185, 13, 68)}):Play()
+                TweenService:Create(Button, TweenInfo.new(0.2, Enum.EasingStyle.Quad, Enum.EasingDirection.Out), {BackgroundColor3 = Color3.fromRGB(6, 11, 158)}):Play()
             end)
 
             Button.MouseButton1Click:Connect(function()
@@ -727,7 +727,7 @@ coroutine.wrap(GRIR_fake_script)()
 
                     Option.Name = "Option"
                     Option.Parent = OptionHolder
-                    Option.BackgroundColor3 = Color3.fromRGB(134, 10, 49)
+                    Option.BackgroundColor3 = Color3.fromRGB(0, 0, 139)
                     Option.BorderSizePixel = 0
                     Option.Size = UDim2.new(1, -16, 0, 30)
                     Option.AutoButtonColor = false
@@ -768,7 +768,7 @@ coroutine.wrap(GRIR_fake_script)()
 
                     Option.Name = "Option"
                     Option.Parent = OptionHolder
-                    Option.BackgroundColor3 = Color3.fromRGB(134, 10, 49)
+                    Option.BackgroundColor3 = Color3.fromRGB(0, 0, 139)
                     Option.BorderSizePixel = 0
                     Option.Size = UDim2.new(1, -16, 0, 30)
                     Option.AutoButtonColor = false
