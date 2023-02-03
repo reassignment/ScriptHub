@@ -16,6 +16,8 @@ elseif(game.PlaceId) == 8075693156 then
 elseif(game.PlaceId) == 11606818992 then
   loadstring(game:HttpGet("https://raw.githubusercontent.com/reassignment/ScriptHub/main/SteepSteps"))()
 
+elseif(game.PlaceId) == 7503115095 then
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/reassignment/ScriptHub/main/PopItTrading.lua"))()
 else
   loadstring(game:HttpGet("https://raw.githubusercontent.com/reassignment/ScriptHub/main/universal"))()
 end
