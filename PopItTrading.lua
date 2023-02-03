@@ -4,9 +4,15 @@ lib:SetTitle("ScriptHub - Pop It Trading")
 
 local tab1 = lib:NewTab("Automatic", "Automate Stuff")
 
-tab1:NewToggle("Auto Jet",false,function(value)
+IdVariable = nil
+
+tab1:NewTextBox("ID","Enter ID Here",function(value)
+   IdVariable = value
+end)
+
+tab1:NewToggle("Auto Item",false,function(value)
    if value == true then
-        getgenv().id = 40082 -- Item ID
+        getgenv().id = IdVariable -- Item ID
 
         local args = {
              [1] = game:GetService("Players").LocalPlayer
@@ -23,3 +29,4 @@ tab1:NewToggle("Auto Jet",false,function(value)
         getgenv().autoJet = false;
     end
 end)
+
