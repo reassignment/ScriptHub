@@ -30,3 +30,13 @@ tab1:NewToggle("Auto Item",false,function(value)
     end
 end)
 
+local tab2 = lib:NewTab("Speed and Jump", "Walkspeed and Jumpspeed")
+
+tab2:NewSlider("WalkSpeed",16,500,16,function(value)
+   game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = value
+end)
+
+tab2:NewSlider("JumpPower",50,500,50,function(value)
+   game.Players.LocalPlayer.Character.Humanoid.JumpPower = value
+end)
+
