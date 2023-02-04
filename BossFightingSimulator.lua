@@ -6,31 +6,31 @@ local tab1 = lib:NewTab("Automatic", "Automate Stuff")
 local AutoScoreSlider = nil
 
 
-tab1:NewToggle("Auto Player (WIP: MUST HOLD WEAPON)",false,function(value)
+tab1:NewToggle("Auto Player".." (WIP: MUST HOLD WEAPON) ",false,function(value)
    if value == true then
         getgenv().autoPlayer = true;
         while autoPlayer == true do
             local myTool = nil
 
-myTool = game.Players.LocalPlayer.Character:GetChildren()
+	myTool = game.Players.LocalPlayer.Character:GetChildren()
 
-for i,tool in pairs(myTool) do
+	for i,tool in pairs(myTool) do
 
-if tool == nil then
+		if tool == nil then
 
-repeat
-wait(0.1)
-print("No Sword")
-until tool ~= nil
+		repeat
+		wait(0.1)
+		print("No Sword")
+		until tool ~= nil
 
-else if tool:IsA("Tool") then
+		else if tool:IsA("Tool") then
 
-myTool = tool.Name
+		myTool = tool.Name
 
 
-end
+		end
 
-end
+	end
 
 end
 
