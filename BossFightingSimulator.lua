@@ -1,6 +1,6 @@
 local lib = loadstring(game:HttpGet("https://raw.githubusercontent.com/insanedude59/UILib/main/source"))();
 
-lib:SetTitle("ScriptHub - Goal Simulator")
+lib:SetTitle("ScriptHub - Boss Fighting Simulator")
 
 local tab1 = lib:NewTab("Automatic", "Automate Stuff")
 local AutoScoreSlider = nil
