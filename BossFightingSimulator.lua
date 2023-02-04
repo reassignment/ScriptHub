@@ -6,7 +6,7 @@ local tab1 = lib:NewTab("Automatic", "Automate Stuff")
 local AutoScoreSlider = nil
 
 
-tab1:NewToggle("Auto Player",false,function(value)
+tab1:NewToggle("Auto Player (WIP: MUST HOLD WEAPON)",false,function(value)
    if value == true then
         getgenv().autoPlayer = true;
         while autoPlayer == true do
