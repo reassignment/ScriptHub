@@ -3,7 +3,6 @@ local lib = loadstring(game:HttpGet("https://raw.githubusercontent.com/insanedud
 lib:SetTitle("ScriptHub - Boss Fighting Simulator")
 
 local tab1 = lib:NewTab("Automatic", "Automate Stuff")
-local AutoScoreSlider = nil
 
 
 tab1:NewToggle("Auto Player".." (WIP: MUST HOLD WEAPON) ",false,function(value)
