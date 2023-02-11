@@ -14,7 +14,7 @@ elseif(game.PlaceId) == 8075693156 then
   loadstring(game:HttpGet("https://raw.githubusercontent.com/reassignment/ScriptHub/main/autoFarmCod.lua"))()
 
 elseif(game.PlaceId) == 11606818992 then
-  loadstring(game:HttpGet("https://raw.githubusercontent.com/reassignment/ScriptHub/main/SteepSteps"))()
+  loadstring(game:HttpGet("https://raw.githubusercontent.com/reassignment/ScriptHub/main/SteepSteps.lua"))()
 
 elseif(game.PlaceId) == 7503115095 then
     loadstring(game:HttpGet("https://raw.githubusercontent.com/reassignment/ScriptHub/main/PopItTrading.lua"))()
@@ -23,5 +23,5 @@ elseif(game.PlaceId) == 4246487209 then
     loadstring(game:HttpGet("https://raw.githubusercontent.com/reassignment/ScriptHub/main/BossFightingSimulator.lua"))()
     
 else
-  loadstring(game:HttpGet("https://raw.githubusercontent.com/reassignment/ScriptHub/main/universal"))()
+  loadstring(game:HttpGet("https://raw.githubusercontent.com/reassignment/ScriptHub/main/universal.lua"))()
 end
