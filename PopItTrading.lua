@@ -1,5 +1,8 @@
 local lib = loadstring(game:HttpGet("https://raw.githubusercontent.com/insanedude59/UILib/main/source"))();
 
+local Lib = loadstring(game:HttpGet(('https://raw.githubusercontent.com/BoredStuff2/notify-lib/main/lib'),true))()
+Lib.prompt('ScriptHub', 'Loaded Pop It Trading', 3)
+
 lib:SetTitle("ScriptHub - Pop It Trading")
 
 local tab1 = lib:NewTab("Automatic", "Automate Stuff")
